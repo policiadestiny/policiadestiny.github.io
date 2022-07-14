@@ -215,15 +215,15 @@ footer {
 }
 
 #avisoGerado #headerAviso-DDJ {
-    background-image: url('https://policiadestiny.github.io/ddj/assets/img/header-ddj.png');
+    background-image: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/header-ddj.png');
 }
 
 #avisoGerado #headerAviso-DDC {
-    background-image: url('https://policiadestiny.github.io/ddj/assets/img/header-ddc.png');
+    background-image: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/header-ddc.png');
 }
 
 #avisoGerado #headerAviso-GIT {
-    background-image: url('https://policiadestiny.github.io/ddj/assets/img/header-git.png');
+    background-image: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/header-git.png');
 }
 
 #avisoGerado .headerAvisoTitle {
@@ -238,7 +238,7 @@ footer {
 #avisoGerado .lineAviso {
     width: 1024px;
     height: 6px;
-    background-image: url('https://policiadestiny.github.io/ddj/assets/img/line.png');
+    background-image: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/line.png');
 }
 
 #avisoGerado .conteudoAviso {
@@ -252,7 +252,7 @@ footer {
     margin-bottom: 80px;
     padding-top: 80px;
     padding-bottom: 80px;
-    background: url('https://policiadestiny.github.io/ddj/assets/img/dpd.png') center center;
+    background: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/dpd.png') center center;
     background-repeat: no-repeat;
     background-size: 45%;
     word-wrap: break-word;
@@ -268,7 +268,7 @@ footer {
 #avisoGerado .assinaturaAviso span.assinaturaNome {
     font-family: 'Homemade Apple'!important;
     font-size: 24px;
-    background: url('https://policiadestiny.github.io/ddj/assets/img/lineAssinatura.png') center 40px;
+    background: url('https://policiadestiny.github.io/cortex/ddj/emitir-avisos/assets/img/lineAssinatura.png') center 40px;
     background-repeat: no-repeat;
 }
 
