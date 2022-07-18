@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Avisos</title>
+
+    <style type="text/css">
+        body {
+            background-color: #ccc;
+        }
+
+        #listAvisos {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #listAvisos .data,
+        #listAvisos .assinatura,
+        #listAvisos .titulo {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ccc;
+        }
+
+        #listAvisos .aviso {
+            width: 500px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #999;
+        }
+
+        #listAvisos .aviso img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+
+        fetch('https://api-dpd.herokuapp.com/api/v1/cortex/ddj/aviso')
+            .then((response) => {
+                response.json().then((data) => {
+
+                    data.forEach((value, index) => {
+
+                        const newElement = document.createElement('div');
+                        newElement.classList.add('aviso');
+
+                        newElement.innerHTML =
+                            `<div class="data">${value.data} as ${value.hora}</div>` +
+                            `<div class="assinatura">${value.assinatura} - ${value.cargo}</div>` +
+                            `<div class="titulo">${value.titulo}</div>` +
+                            `<a href="${value.avisoImg}" target="_blank"><img src="${value.avisoImg}"></a>`;
+
+                        const element = document.getElementById('listAvisos')
+                        element.appendChild(newElement);
+
+                    });
+
+                });
+            })
+
+    </script>
+
+    <div id="listAvisos"></div>
+
+</body>
+
+</html>
